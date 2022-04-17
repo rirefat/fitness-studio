@@ -1,0 +1,29 @@
+.top-banner{
+    background-image: url(./top-banner.jpg);
+    height: 100vh;
+    padding-top: 15%;
+}
+.main-title{
+    font-size: 50px;
+    font-weight: 500;
+    color: white;
+}
+.secondary-title{
+    font-size: 25px;
+    letter-spacing: 2px;
+}
+.top-banner p{
+    color: whitesmoke;
+    margin: 35px 0;
+}
+.highlighted-orange{
+    color: orange;
+}
+.top-banner .btn-outline-light{
+    border-width: 2px;
+    border-radius: 22px;
+    border-color: orange !important;
+}
+.top-banner .btn-outline-light:hover{
+    background-color: orange;
+}
