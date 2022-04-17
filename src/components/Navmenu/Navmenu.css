@@ -1,10 +1,13 @@
 .login-btn{
     font-size: 18px;
+    padding: 8px 15px;
     border-width: 2px;
     border-radius: 32px;
-    border-color: orange !important;
+    background-color: white;
+    border:2px solid orange;
     color: black;
     margin: 0 12px;
+    box-shadow: 2px 2px 6px lightgray;
 }
 .login-btn:hover{
     background-color: orange;

@@ -24,7 +24,8 @@ const Navmenu = () => {
                             <NavDropdown.Divider />
                         </NavDropdown>
                     </Nav> 
-                    <Button className='me-3 login-btn' variant="outline-info">Sign Up</Button>                  
+                    {/* <Nav.Link href="#login">LOGIN</Nav.Link> */}
+                    <button className='me-3 login-btn' >LOGIN</button>                  
                 </Navbar.Collapse>
                 </Container>
                 </Navbar>   

@@ -30,3 +30,18 @@
 .top-banner .btn-outline-light:hover{
     background-color: orange;
 }
+
+.about-me{
+    padding-top: 6%;
+}
+.about-me h1{
+    font-weight: 400;
+    font-size: 32px;
+    margin-bottom: 12px;
+}
+.about-me h3{
+    font-weight: 400;
+}
+.experience-status{
+    height: 0.3rem !important;
+}
