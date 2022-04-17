@@ -1,0 +1,32 @@
+.packages h1{
+    font-weight: 400;
+    font-size: 32px;
+    margin-bottom: 12px;
+    text-align: center;
+}
+.packages p{
+    font-size: 20px;
+}
+.packages-info{
+    width: 75%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 15px;
+}
+
+/* Media Query for Service section */
+@media screen and (max-width: 768px) {
+    .packages-info{
+        width: 80%;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 15px;
+    }
+}
+@media screen and (max-width: 540px) {
+    .packages-info{
+        width: 80%;
+        grid-template-columns:1fr;
+        grid-gap: 15px;
+    }
+}

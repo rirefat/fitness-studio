@@ -1,0 +1,43 @@
+[
+    {
+        "id": 1,
+        "title": "novice",
+        "subTitle": "INITIAL TRAINING LEVEL",
+        "price": 29,
+        "feature1": "3 Trainings",
+        "feature2": "Meal Plan",
+        "feature3": "Doctor’s Consultation",
+        "feature4": "Cardio Workout",
+        "feature5": "Trainings in Gym",
+        "feature6": "Normal Shower"
+    },
+    {
+        "id": 2,
+        "title": "semi-pro",
+        "subTitle": "WHO HAVE EXPERIENCE TRAINING",
+        "price": 49,
+        "feature1": "5 Trainings",
+        "feature2": "Meal Plan",
+        "feature3": "Doctor’s Consultation",
+        "feature4": "Cardio Workout",
+        "feature5": "Trainings in Gym",
+        "feature6": "Steam Bath"
+    },
+    {
+        "id": 3,
+        "title": "pro",
+        "subTitle": "FOR PROFESSIONAL ATHLETES",
+        "price": 99,
+        "feature1": "7 Trainings",
+        "feature2": "Meal Plan",
+        "feature3": "Doctor’s Consultation",
+        "feature4": "Cardio Workout",
+        "feature5": "Trainings in Gym",
+        "feature6": "Steam Bath"
+    }
+]
+
+
+
+
+
