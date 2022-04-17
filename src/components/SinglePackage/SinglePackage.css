@@ -4,8 +4,24 @@
     margin: 8px;
     border-radius: 15px;
     box-shadow: 4px 4px 12px lightgray;
+    position: relative;
+}
+.service-card .img{
+    position: absolute;
+    top: -12%;
+    left: 12%;
+}
+.img img{
+    border-radius: 50%;
+    border: 10px solid white;
+    width: 50%; 
+    cursor: pointer;
+}
+.img img:hover{
+    transform: scale(1.1);
 }
 .service-card h2{
+    margin-top: 40px;
     font-weight: 400;
     text-transform: uppercase;
     color: orange;
@@ -49,4 +65,5 @@
     background-color: orange;
     color: white;
 }
+
 

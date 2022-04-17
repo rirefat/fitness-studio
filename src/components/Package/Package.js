@@ -13,7 +13,7 @@ const Package = () => {
     return (
         <div className='packages text-center my-5 py-5'>
             <h1 className='mb-5'>Pricing for Everybody</h1>
-            <p>Portland meggings meditation, craft beer single-origin coffee knausgaard echo park</p>
+            <p className='my-5 pb-5'>Portland meggings meditation, craft beer single-origin coffee knausgaard echo park</p>
            <div className="packages-info">
            {
                services.map(service=><SinglePackage key={service.id} service={service} ></SinglePackage>)

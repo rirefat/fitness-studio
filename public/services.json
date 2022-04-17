@@ -9,7 +9,8 @@
         "feature3": "Doctor’s Consultation",
         "feature4": "Cardio Workout",
         "feature5": "Trainings in Gym",
-        "feature6": "Normal Shower"
+        "feature6": "Normal Shower",
+        "img": "https://i.ibb.co/jyB3MDd/package-1.png"
     },
     {
         "id": 2,
@@ -21,7 +22,8 @@
         "feature3": "Doctor’s Consultation",
         "feature4": "Cardio Workout",
         "feature5": "Trainings in Gym",
-        "feature6": "Steam Bath"
+        "feature6": "Steam Bath",
+        "img": "https://i.ibb.co/LZ98ByK/package-2.png"
     },
     {
         "id": 3,
@@ -33,7 +35,8 @@
         "feature3": "Doctor’s Consultation",
         "feature4": "Cardio Workout",
         "feature5": "Trainings in Gym",
-        "feature6": "Steam Bath"
+        "feature6": "Steam Bath",        
+        "img": "https://i.ibb.co/ZT3sWB2/package-3.png"
     }
 ]
 

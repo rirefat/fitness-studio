@@ -2,11 +2,15 @@ import React from 'react';
 import './SinglePackage.css';
 
 const SinglePackage = (props) => {
-    const {title, subTitle, price, feature1,feature2,feature3,feature4,feature5,feature6}=props.service;
+    const {title, subTitle, price, feature1,feature2,feature3,feature4,feature5,feature6,img}=props.service;
     return (
         <div className='service-card'>
+            <div className="img">
+                <img src={img} alt="" />
+            </div>
             <h2>{title}</h2>
             <h3>{subTitle}</h3>
+            <div className='w-25 mx-auto'><hr /></div>
             <p className='my-3 price-section'>$ <span className='price'>{price}</span> /Week</p>
             <ul>
                 <li>{feature1}</li>
