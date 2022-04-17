@@ -1,5 +1,6 @@
 .top-banner{
     background-image: url(./top-banner.jpg);
+    background-size: cover;
     height: 100vh;
     padding-top: 15%;
 }
@@ -20,8 +21,10 @@
     color: orange;
 }
 .top-banner .btn-outline-light{
+    font-size: 18px;
+    padding: 12px 16px;
     border-width: 2px;
-    border-radius: 22px;
+    border-radius: 32px;
     border-color: orange !important;
 }
 .top-banner .btn-outline-light:hover{
