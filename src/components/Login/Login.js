@@ -39,9 +39,10 @@ const Login = () => {
     const [sendPasswordResetEmail, sending] = useSendPasswordResetEmail(auth);
     const resetPassword = async() =>{
         const email = emailRef.current.value;
-        console.log(email)
-        await sendPasswordResetEmail(email);
-        toast('Check Email To Reset Password');
+        if(email){
+            await sendPasswordResetEmail(email);
+            toast('Check Email To Reset Password');
+        }
     }
     return (
         <div className='container w-25 mx-auto login-form'>
