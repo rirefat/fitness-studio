@@ -8,7 +8,7 @@ const Navmenu = () => {
         <>
             <Navbar collapseOnSelect expand="lg" bg="light" variant="light" sticky="top" className='top-navbar'>
                 <Container>
-                <Navbar.Brand href="#home" className='w-75'>
+                <Navbar.Brand href="/home" className='w-75'>
                     <img src={logo} alt=""/>
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
