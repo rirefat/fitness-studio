@@ -1,6 +1,8 @@
 import React, { useRef } from 'react';
 import { Button, Form } from 'react-bootstrap';
+import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { useNavigate } from 'react-router-dom';
+import auth from '../../firebase.init';
 import './Login.css'
 
 const Login = () => {
@@ -12,10 +14,23 @@ const Login = () => {
         navigate('/register');
     }
 
+    const [
+        signInWithEmailAndPassword,
+        user,
+        loading,
+        error,
+      ] = useSignInWithEmailAndPassword(auth);
+
     const handleSubmit = event =>{
         event.preventDefault();
         const email = emailRef.current.value;
         const pass = passRef.current.value;
+
+        signInWithEmailAndPassword(email, pass)
+    }
+
+    if(user){
+        navigate('/home')
     }
     return (
         <div className='container w-25 mx-auto login-form'>

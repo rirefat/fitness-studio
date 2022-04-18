@@ -1,8 +1,13 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import './SinglePackage.css';
 
 const SinglePackage = (props) => {
     const {title, subTitle, price, feature1,feature2,feature3,feature4,feature5,feature6,img}=props.service;
+    const navigate = useNavigate();
+    const proceedCheckout =()=>{
+        navigate('/checkout');
+    }
     return (
         <div className='service-card'>
             <div className="img">
@@ -20,7 +25,7 @@ const SinglePackage = (props) => {
                 <li>{feature5}</li>
                 <li>{feature6}</li>
             </ul>
-            <button className='take-plan-btn'>Take Plan</button>
+            <button className='take-plan-btn' onClick={proceedCheckout}>Take Plan</button>
         </div>
     );
 };
