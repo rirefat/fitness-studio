@@ -1,3 +1,10 @@
+.top-navbar{
+    box-shadow: 2px 2px 8px lightgrey;
+    height: fit-content !important;
+}
+.top-navbar img{
+    width: 15%;
+}
 .login-btn{
     font-size: 18px;
     padding: 8px 15px;

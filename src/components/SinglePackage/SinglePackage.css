@@ -9,7 +9,7 @@
 .service-card .img{
     position: absolute;
     top: -12%;
-    left: 12%;
+    left: 14%;
 }
 .img img{
     border-radius: 50%;
@@ -67,3 +67,14 @@
 }
 
 
+/* Media Query for Service section */
+@media screen and (max-width: 768px) {
+    .service-card .img{
+        position: absolute;
+        top: -12%;
+        left: 0;
+    }
+}
+@media screen and (max-width: 540px) {
+   
+}

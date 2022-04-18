@@ -21,6 +21,7 @@
         width: 80%;
         grid-template-columns: 1fr 1fr;
         grid-gap: 15px;
+        grid-row-gap:75px;
     }
 }
 @media screen and (max-width: 540px) {
@@ -28,5 +29,6 @@
         width: 80%;
         grid-template-columns:1fr;
         grid-gap: 15px;
+        grid-row-gap:75px;
     }
 }

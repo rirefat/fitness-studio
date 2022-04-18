@@ -5,11 +5,11 @@ import { Button, Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
 
 const Navmenu = () => {
     return (
-        <div>
-            <Navbar collapseOnSelect expand="lg" bg="light" variant="light" sticky="top">
+        <>
+            <Navbar collapseOnSelect expand="lg" bg="light" variant="light" sticky="top" className='top-navbar'>
                 <Container>
-                <Navbar.Brand href="#home">
-                    <img src={logo} alt="" className='w-25'/>
+                <Navbar.Brand href="#home" className='w-75'>
+                    <img src={logo} alt=""/>
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
@@ -29,7 +29,7 @@ const Navmenu = () => {
                 </Navbar.Collapse>
                 </Container>
                 </Navbar>   
-        </div>
+        </>
     );
 };
 
