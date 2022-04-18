@@ -1,0 +1,11 @@
+.social-login button{
+    background-color: white !important;
+    margin: 8px;
+    width: 100%;
+    padding: 12px;
+    border: 2px solid orange;
+    border-radius: 32px;
+}
+.social-login img{
+    margin: 0 8px;
+}

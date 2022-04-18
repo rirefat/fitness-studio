@@ -1,3 +1,17 @@
 .not-found-section{
     text-align: center;
 }
+.not-found-section img{
+    width: 25%;
+    margin-top: 25px;
+}
+.not-found-section h1{
+    margin: 10px;
+    color: orange;
+    font-weight: 400;
+    font-size: 6rem;
+}
+.not-found-section p{
+    color: dimgrey;
+    margin-bottom: 8%;
+}

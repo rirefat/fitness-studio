@@ -6,10 +6,12 @@
     color: orange;
 }
 .login-form button{
-    background-color: #ffa500 !important;
+    background-color: white !important;
+    border: 2px solid #ffa500;
+    border-radius: 32px;
 }
 .login-form button:hover{
-    background-color: #ef5f07 !important;
+    background-color: #ffa500 !important;
 }
 .login-form .highlighted-text{
     color: #ffa500;
