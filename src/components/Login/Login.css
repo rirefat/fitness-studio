@@ -1,0 +1,20 @@
+.login-form{
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
+.login-form .login-title{
+    color: orange;
+}
+.login-form button{
+    background-color: #ffa500 !important;
+}
+.login-form button:hover{
+    background-color: #ef5f07 !important;
+}
+.login-form .highlighted-text{
+    color: #ffa500;
+    font-weight: 600;
+}
+.login-form .highlighted-text:hover{
+    text-decoration: underline;
+}

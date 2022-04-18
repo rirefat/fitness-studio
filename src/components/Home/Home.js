@@ -8,7 +8,7 @@ const Home = () => {
     return (
         <div>
             {/*========================================== Top Banner Section ==========================================*/}
-            <div className="top-banner">
+            <div className="top-banner" id='home-top'>
                 <div className='w-50 mx-auto'>
                     <div>
                     <h1 className='secondary-title highlighted-orange'>Luke Owen</h1>
@@ -20,7 +20,7 @@ const Home = () => {
                 </div>
             </div>
 
-            <div className="about-me container">
+            <div className="about-me container" id='about'>
                 <h1 className='text-center'>Hello, my name is Luke Owen, I’m a your new personal trainer!</h1>
                 <p className='my-5'>Typewriter post-ironic trust fund, venmo health goth meditation selfies. Chartreuse vice actually bicycle rights, four dollar toast lumbersexual YOLO fingerstache pug squid sriracha taxidermy. Try-hard keffiyeh seitan, normcore ennui aesthetic put a bird on it pinterest farm-to-table.</p>
 
@@ -46,7 +46,9 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-            <Package></Package>
+            <div  id='pricing'>
+                <Package></Package>
+            </div>
         </div>
     );
 };
