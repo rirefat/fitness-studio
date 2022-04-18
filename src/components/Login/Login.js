@@ -1,9 +1,11 @@
 import React, { useRef } from 'react';
 import { Button, Form } from 'react-bootstrap';
-import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
 import SocialLogin from '../SocialLogin/SocialLogin';
+import { ToastContainer, toast } from 'react-toastify';
+  import 'react-toastify/dist/ReactToastify.css';
 import './Login.css'
 
 const Login = () => {
@@ -33,6 +35,14 @@ const Login = () => {
     if(user){
         navigate('/home')
     }
+
+    const [sendPasswordResetEmail, sending] = useSendPasswordResetEmail(auth);
+    const resetPassword = async() =>{
+        const email = emailRef.current.value;
+        console.log(email)
+        await sendPasswordResetEmail(email);
+        toast('Check Email To Reset Password');
+    }
     return (
         <div className='container w-25 mx-auto login-form'>
             <h1 className='text-center mb-5 login-title'>Please Login</h1>
@@ -53,8 +63,10 @@ const Login = () => {
                 </Button>
                 </Form>
                 <p className='my-3'>New to Fitness Studio? <span className='highlighted-text' onClick={navigateRegister}>Register Now</span></p>
+                <p className='my-3'>Forget Password? <span className='highlighted-text' onClick={resetPassword}>Reset Password</span></p>
                 <div className='text-center'>OR</div>
                 <SocialLogin></SocialLogin>
+                <ToastContainer />
         </div>
     );
 };
