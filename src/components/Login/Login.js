@@ -32,9 +32,6 @@ const Login = () => {
                     <Form.Label>Password</Form.Label>
                     <Form.Control type="password" placeholder="Password" ref={passRef} required/>
                 </Form.Group>
-                <Form.Group className="mb-3" controlId="formBasicCheckbox">
-                    <Form.Check type="checkbox" label="Check me out" />
-                </Form.Group>
                 <Button variant="warning" type="submit">
                     LOGIN
                 </Button>
