@@ -2,9 +2,11 @@ import React from 'react';
 import { Col, FloatingLabel, Form, Row } from 'react-bootstrap';
 import './Checkout.css'
 import img from '../../images/payment-methods.png'
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 
 const Checkout = () => {
+    const param =useParams();
+    const {name}=param;
     const navigate=useNavigate()
     const proceedCheckout =(event)=>{
         event.preventDefault();
@@ -15,6 +17,7 @@ const Checkout = () => {
             <h1 className='text-center mt-5 page-title'>Checkout</h1>
             <div className="main-body">
                 <div className="form my-5">
+                    {name ? <h5>You have selected <span className='highlighted-text'>{name}</span> package. Please fill-up the form to proceed checkout.</h5>:""}
                     <form onSubmit={proceedCheckout}>
                         <Row className="g-2 mb-4">
                             <Col md>

@@ -30,6 +30,11 @@ function App() {
             <Checkout></Checkout>
           </RequireAuth>
         }></Route>
+        <Route path='/checkout/:name' element={
+          <RequireAuth>
+            <Checkout></Checkout>
+          </RequireAuth>
+        }></Route>
         <Route path='/payment-confirm' element={
           <RequireAuth>
             <Confirmation></Confirmation>

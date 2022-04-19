@@ -5,8 +5,8 @@ import './SinglePackage.css';
 const SinglePackage = (props) => {
     const {title, subTitle, price, feature1,feature2,feature3,feature4,feature5,feature6,img}=props.service;
     const navigate = useNavigate();
-    const proceedCheckout =()=>{
-        navigate('/checkout');
+    const proceedCheckout =(title)=>{
+        navigate(`/checkout/${title}`);
     }
     return (
         <div className='service-card'>
@@ -25,7 +25,7 @@ const SinglePackage = (props) => {
                 <li>{feature5}</li>
                 <li>{feature6}</li>
             </ul>
-            <button className='take-plan-btn' onClick={proceedCheckout}>Take Plan</button>
+            <button className='take-plan-btn' onClick={()=>proceedCheckout(title)}>Take Plan</button>
         </div>
     );
 };

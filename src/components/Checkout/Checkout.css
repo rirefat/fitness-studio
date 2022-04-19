@@ -2,6 +2,17 @@
     font-weight: 400;
     color: orange;
 }
+.checkout .highlighted-text{
+    text-transform: uppercase;
+    color: goldenrod;
+    font-weight: 500;
+}
+.checkout .highlighted-text::before{
+    content: "'";
+}
+.checkout .highlighted-text::after{
+    content: "'";
+}
 .checkout .main-body{
     display: grid;
     grid-template-columns: 2fr 1fr;
