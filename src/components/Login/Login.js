@@ -9,6 +9,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import './Login.css'
 
 const Login = () => {
+    let errorElement;
     const emailRef = useRef('')
     const passRef = useRef('')
     const navigate = useNavigate();
@@ -35,7 +36,10 @@ const Login = () => {
     if(user){
         navigate('/home')
     }
-
+    if (error) {
+        errorElement = <p className='text-danger'>Warning: Wrong email or password</p>
+    }
+    
     const [sendPasswordResetEmail, sending] = useSendPasswordResetEmail(auth);
     const resetPassword = async() =>{
         const email = emailRef.current.value;
@@ -62,6 +66,7 @@ const Login = () => {
                     <Form.Label>Password</Form.Label>
                     <Form.Control type="password" placeholder="Password" ref={passRef} required/>
                 </Form.Group>
+                {errorElement}
                 <Button variant="warning" type="submit">
                     LOGIN
                 </Button>
