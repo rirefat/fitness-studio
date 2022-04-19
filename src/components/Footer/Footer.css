@@ -1,5 +1,19 @@
+footer{
+    background-color: #666666;
+    padding: 25px 0;
+}
+footer img{
+    width: 15%;
+}
+footer p{
+    color: whitesmoke;
+    margin: 0;
+}
 footer h4{
     font-weight: 400;
     font-size: 15px;
     text-align: center;
+    color: lightgray;
+    margin-top: 50px;
+    margin-bottom: 0;
 }
