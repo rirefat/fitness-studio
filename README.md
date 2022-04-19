@@ -19,4 +19,3 @@
 - Firebase Authentication
 - React Router
 - React Firebase Hook
-- Heroicons 
