@@ -31,6 +31,7 @@ const Navmenu = () => {
                         <Nav.Link as={Link} to="/about">About</Nav.Link>
                         <Nav.Link href="home#pricing">Pricing</Nav.Link>
                         <NavDropdown title="More" id="collasible-nav-dropdown">
+                            <NavDropdown.Item as={Link} to="/profile">My Profile</NavDropdown.Item>
                             <NavDropdown.Item as={Link} to="/checkout">Checkout</NavDropdown.Item>
                             <NavDropdown.Item as={Link} to="#gallery/3.2">Gallery</NavDropdown.Item>
                             <NavDropdown.Item as={Link} to="#testimonials/3.3">Testimonials</NavDropdown.Item>

@@ -1,0 +1,29 @@
+.about-page .page-title{
+    font-weight: 400;
+    text-align: center;
+    color: orange;
+}
+.details{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.details .img{
+    box-shadow: 6px 6px 12px rgb(178, 178, 178);
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+/* Media Query for About Page */
+@media screen and (max-width: 768px) {
+    .details{
+        width: 80%;
+        grid-template-columns: 1fr;
+    }
+}
+@media screen and (max-width: 1280px) {
+    .details{
+        grid-gap:25px;
+    }
+}
