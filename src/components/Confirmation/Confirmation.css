@@ -1,0 +1,14 @@
+.confirmation h1{
+    color: orange;
+    font-size: 52px;
+    font-weight: 400;
+}
+.confirmation h3{
+    font-weight: 300;
+    color: darkgray;
+    font-size: 25px;
+    margin: 12px 0;
+}
+.confirmation{
+    height: 70vh;
+}

@@ -3,6 +3,7 @@ import './App.css';
 import Aboutme from './components/Aboutme/Aboutme';
 import Blogs from './components/Blogs/Blogs';
 import Checkout from './components/Checkout/Checkout';
+import Confirmation from './components/Confirmation/Confirmation';
 import Footer from './components/Footer/Footer';
 import Home from './components/Home/Home';
 import Login from './components/Login/Login';
@@ -27,6 +28,11 @@ function App() {
         <Route path='/checkout' element={
           <RequireAuth>
             <Checkout></Checkout>
+          </RequireAuth>
+        }></Route>
+        <Route path='/payment-confirm' element={
+          <RequireAuth>
+            <Confirmation></Confirmation>
           </RequireAuth>
         }></Route>
         <Route path='*' element={<NotFoundPage></NotFoundPage>}></Route>

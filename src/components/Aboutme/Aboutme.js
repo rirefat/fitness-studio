@@ -35,8 +35,8 @@ const Aboutme = () => {
                         <h5>Visit my profile: </h5>
                         <div className="links">
                             <a href="https://github.com/rirefat" ><img className='mx-1' src={github} alt="" /></a>
-                            <a href="https://github.com/rirefat" ><img className='mx-1' src={facebook} alt="" /></a>
-                            <a href="https://github.com/rirefat" ><img className='mx-1' src={linkedIn} alt="" /></a>
+                            <a href="https://www.facebook.com/rafiulrefat.official/" ><img className='mx-1' src={facebook} alt="" /></a>
+                            <a href="https://www.linkedin.com/in/rafiul-islam-refat-868779160/" ><img className='mx-1' src={linkedIn} alt="" /></a>
                         </div>
                     </div>
                 </div>

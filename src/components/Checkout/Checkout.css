@@ -2,3 +2,33 @@
     font-weight: 400;
     color: orange;
 }
+.checkout .main-body{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap:25px;
+} 
+.payment-methods img{
+    border-radius: 15px;
+}
+.checkout button{
+    background-color: white;
+    border: 2px solid orange;
+    padding: 12px;
+    color: orange;
+    border-radius: 32px;
+}
+.checkout button:hover{
+    background-color: orange;
+    color: white;
+}
+
+@media screen and (max-width: 600px){
+    .checkout .main-body{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap:25px;
+    } 
+    .payment-methods img{
+        width: 50% !important;
+    }
+}
