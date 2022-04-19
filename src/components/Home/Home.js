@@ -21,16 +21,18 @@ const Home = () => {
                     <div>
                     <h1 className='secondary-title highlighted-orange'>Luke Owen</h1>
                     <h1 className='main-title'>Your New <span className='highlighted-orange'>Personal Trainer</span></h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate saepe quo laboriosam consequatur enim corporis? Eveniet, deserunt officiis hic qui facilis rerum reiciendis modi. Aut debitis inventore exercitationem officia quasi!</p>
-                    <Button onClick={navigateRegPage} className='me-3' variant="outline-light">Sign Up</Button>
-                    <Button onClick={navigateAboutPage} className='me-3' variant="outline-light">About Me</Button>
+                    <p className='mb-0'>Fitness Studio is more than a place where high performers come to be their best. </p>
+                    <p className='m-0'>We’ve transformed every aspect of our membership to encompass integrated digital and in-club offerings to keep you at your best—all the time, any time. </p>
+                    <p className='mt-0'>Discover the offerings below, plus The Fitness Studio Standard for health, safety, and cleanliness.</p>
+                    <Button onClick={navigateRegPage} className='me-3 my-2' variant="outline-light">Sign Up</Button>
+                    <Button onClick={navigateAboutPage} className='me-3 my-2' variant="outline-light">About Me</Button>
                     </div>
                 </div>
             </div>
 
             <div className="about-me container" id='about'>
-                <h1 className='text-center'>Hello, my name is Luke Owen, I’m a your new personal trainer!</h1>
-                <p className='my-5'>Typewriter post-ironic trust fund, venmo health goth meditation selfies. Chartreuse vice actually bicycle rights, four dollar toast lumbersexual YOLO fingerstache pug squid sriracha taxidermy. Try-hard keffiyeh seitan, normcore ennui aesthetic put a bird on it pinterest farm-to-table.</p>
+                <h1 className='text-center'>Hello, my name is <span className='highlighted-orange'>Luke Owen</span> , I’m a your new personal trainer!</h1>
+                <p className='my-5'>You and your dedicated personal trainer will create a plan that's tailored to your goals—and together, you'll work to unlock the results you want. At every step of the way, you'll be driven by a passionate trainer using the latest science during in-club sessions and at home with Virtual Personal Training.</p>
 
                 <div className='row container'>
                     <div className="left-part col-md-6">
@@ -38,7 +40,7 @@ const Home = () => {
                     </div>
                     <div className="right-part col-md-6">
                         <h3>About Me</h3>
-                        <p className='my-3'>Meditation, craft beer single-origin coffee knausgaard echo park small batch banh mi fanny pack. Pinterest small batch yuccie, semiotics authentic artisan literally cray pickled health goth thundercats pug aesthetic.</p>
+                        <p className='my-3'>It all starts with you and your Fitness Studio trainer. For over 15 years, I've paired hundreds of thousands of members with expert trainers that know how to design a program to support your unique goals, passions, and personality.</p>
                         <div className='mt-4'>
                             <span>NUTRITIONIST</span>
                             <ProgressBar className='experience-status my-2 w-75' animated now={95} />

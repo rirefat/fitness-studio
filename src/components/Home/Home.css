@@ -45,3 +45,32 @@
 .experience-status{
     height: 0.3rem !important;
 }
+
+@media screen and (max-width: 540px){
+    .main-title{
+        font-size: 30px;
+        font-weight: 400;
+        color: white;
+    }
+    .secondary-title{
+        font-size: 16px;
+        letter-spacing: 2px;
+    }
+    .top-banner p{
+        color: whitesmoke;
+        margin: 20px 0;
+        font-size: 15px;
+    }
+    .top-banner .btn-outline-light{
+        font-size: 14px;
+        padding: 8px 14px;
+        border-width: 2px;
+        border-radius: 32px;
+        border-color: orange !important;
+    }
+    .about-me h1{
+        font-weight: 400;
+        font-size: 22px;
+        margin-bottom: 12px;
+    }
+}
