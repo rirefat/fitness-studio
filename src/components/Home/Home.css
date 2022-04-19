@@ -105,3 +105,10 @@
         margin-bottom: 12px;
     }
 }
+@media screen and (max-width: 768px){
+    .call-to-action{
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+}
