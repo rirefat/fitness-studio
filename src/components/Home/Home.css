@@ -45,7 +45,37 @@
 .experience-status{
     height: 0.3rem !important;
 }
-
+.call-to-action{
+    background-color: lightgrey;
+    border-radius: 32px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    box-shadow: 4px 4px 12px lightgray;
+}
+.call-to-action h1{
+    font-weight: 400;
+}
+.call-to-action button{
+    border: none;
+    background-color: orange;
+    color: white;
+    padding: 8px 36px;
+    font-size: 22px;
+    border-radius: 32px;
+}
+.call-to-action button:hover{
+    background-color: goldenrod;
+}
+.facts-achievements{
+    background-color: #F9F9F9;
+}
+.facts-achievements h2{
+    font-size: 52px;
+    font-weight: 700;
+}
+.facts-achievements p{
+    font-size: 22px;
+}
 @media screen and (max-width: 540px){
     .main-title{
         font-size: 30px;

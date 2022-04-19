@@ -59,6 +59,34 @@ const Home = () => {
             <div  id='pricing'>
                 <Package></Package>
             </div>
+            <div className="call-to-action container py-5 my-5">
+                <div className='mx-5 d-flex justify-content-center align-items-center'>
+                    <h1>It’s time to change in yourself come & Start training with the pros!</h1>
+                </div>
+                <div className='d-flex justify-content-center align-items-center'>
+                    <button onClick={navigateRegPage}>Sign Up Personal Training</button>
+                </div>
+            </div>
+            <div className="facts-achievements">
+                <div className="container d-flex justify-content-center">
+                    <div className="first text-center mx-5 p-5">
+                        <h2>13</h2>
+                        <p>Awards Won</p>
+                    </div>
+                    <div className="second text-center mx-5 p-5">
+                        <h2>214</h2>
+                        <p>Workouts</p>
+                    </div>
+                    <div className="third text-center mx-5 p-5">
+                        <h2>287</h2>
+                        <p>Satisifed Clients</p>
+                    </div>
+                    <div className="forth text-center mx-5 p-5">
+                        <h2>9</h2>
+                        <p>Partners Gym</p>
+                    </div>
+                </div>
+            </div>
         </div>
     );
 };
