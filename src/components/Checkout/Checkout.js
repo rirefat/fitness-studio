@@ -17,7 +17,7 @@ const Checkout = () => {
             <h1 className='text-center mt-5 page-title'>Checkout</h1>
             <div className="main-body">
                 <div className="form my-5">
-                    {name ? <h5>You have selected <span className='highlighted-text'>{name}</span> package. Please fill-up the form to proceed checkout.</h5>:""}
+                    {name ? <h5 className='my-4'>You have selected <span className='highlighted-text'>{name}</span> package. Please fill-up the form to proceed checkout.</h5>:""}
                     <form onSubmit={proceedCheckout}>
                         <Row className="g-2 mb-4">
                             <Col md>
@@ -55,7 +55,7 @@ const Checkout = () => {
                             </Col>
                         </Row>
                         <Row className="g-2 mb-4">
-                            <Col md>
+                            {name?"":<Col md>
                                 <FloatingLabel controlId="floatingSelectGrid" label="Package Selection">
                                     <Form.Select aria-label="Floating label select example">
                                         <option>Select Package</option>
@@ -64,7 +64,7 @@ const Checkout = () => {
                                         <option value="3">Pro</option>
                                     </Form.Select>
                                 </FloatingLabel>
-                            </Col>
+                            </Col>}
                             <Col md>
                                 <FloatingLabel controlId="floatingSelectGrid" label="Start Working From">
                                 <Form.Select aria-label="Floating label select example">
