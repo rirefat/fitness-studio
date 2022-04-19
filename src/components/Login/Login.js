@@ -43,6 +43,9 @@ const Login = () => {
             await sendPasswordResetEmail(email);
             toast('Check Email To Reset Password');
         }
+        else{
+            toast('Please Provide Your Email');
+        }
     }
     return (
         <div className='container w-25 mx-auto login-form'>

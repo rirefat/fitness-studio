@@ -1,0 +1,30 @@
+.blog .page-title{
+    color: orange;
+    text-align: center;
+    margin: 4% 0;
+}
+.blog-post{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap:50px;
+    margin-top: 4%;
+    margin-bottom: 6%;
+}
+.blog-post h1{
+    font-weight: 400;
+    font-size: 2rem;
+}
+.blog-post p{
+    font-size: 18px;
+    color: dimgrey;
+    margin-top: 3%;
+}
+.blog-post .highlighted-text{
+    color: rgb(65, 43, 3);
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+hr{
+    width: 35%;
+}
